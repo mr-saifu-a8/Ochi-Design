@@ -3,7 +3,7 @@ import Navbar from './components/Navbar';
 import LandingPage from './components/LandingPage';
 import Marque from './components/Marque';
 import About from './components/About';
-import Eyes from './components/Eyes';
+import EyeAnimation from './components/animation/EyeAnimation';
 
 
 
@@ -14,7 +14,7 @@ function App() {
       <LandingPage />
       <Marque />
       <About />
-      <Eyes/>
+      <EyeAnimation/>
     </div>
   );
 }
