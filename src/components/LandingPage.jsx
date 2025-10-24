@@ -1,7 +1,9 @@
+import { motion } from "framer-motion";
 import React from "react";
 import { IoArrowForwardSharp } from "react-icons/io5";
 
 function LandingPage() {
+  
   return (
     <div className="w-full h-screen pt-1 ">
       <div className="textstructure mt-40 px-14">
@@ -9,7 +11,14 @@ function LandingPage() {
           return (
             <div key={index} className="masker">
               <div className="w-fit flex items-center">
-                {index === 1 && (<div className=" w-[9vw] h-[5.8vw] rounded-sm mr-4 mt-4 bg-[url('/ochi-img1.jpg')] bg-center bg-cover"></div>)}
+                {index === 1 && (
+                  <motion.div
+                    initial={{ width: 0 }}
+                    animate={{ width: "9vw" }}
+                    transition={{ ease: [0.76, 0, 0.24, 1], duration: 1 }}
+                    className=" w-[9vw] h-[5.8vw] rounded-sm mr-4 mt-4 bg-[url('/ochi-img1.jpg')] bg-center bg-cover"
+                  ></motion.div>
+                )}
                 <h1 className="uppercase text-[8.8vw] font-semibold font-['Founders'] leading-[6vw] text-[#212121]">
                   {item}
                 </h1>

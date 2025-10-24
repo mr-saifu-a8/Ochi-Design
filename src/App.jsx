@@ -4,10 +4,14 @@ import LandingPage from './components/LandingPage';
 import Marque from './components/Marque';
 import About from './components/About';
 import EyeAnimation from './components/animation/EyeAnimation';
+import LocomotiveScroll from "locomotive-scroll";
 
 
 
 function App() {
+
+  const locomotiveScroll = new LocomotiveScroll();
+
   return (
     <div className="bg-[#F1F1F1]">
       <Navbar />
