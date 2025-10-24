@@ -5,6 +5,7 @@ import Marque from './components/Marque';
 import About from './components/About';
 import EyeAnimation from './components/animation/EyeAnimation';
 import LocomotiveScroll from "locomotive-scroll";
+import Featured from './components/Featured';
 
 
 
@@ -18,7 +19,8 @@ function App() {
       <LandingPage />
       <Marque />
       <About />
-      <EyeAnimation/>
+      <EyeAnimation />
+      <Featured/>
     </div>
   );
 }
