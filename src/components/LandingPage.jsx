@@ -5,7 +5,12 @@ import { IoArrowForwardSharp } from "react-icons/io5";
 function LandingPage() {
   
   return (
-    <div className="w-full h-screen pt-1 ">
+    <div
+      data-scroll
+      data-scroll-section
+      data-scroll-speed="-.7"
+      className="w-full h-screen pt-1 "
+    >
       <div className="textstructure mt-40 px-14">
         {["We Create", "Eye-Opening", "Presentataion"].map((item, index) => {
           return (

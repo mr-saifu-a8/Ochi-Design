@@ -3,7 +3,12 @@ import React from "react";
 function About() {
   return (
     <div>
-      <div className="w-full bg-[#CDEA68] py-20 rounded-tr-3xl rounded-tl-3xl font-['Neue'] text-black">
+      <div
+        data-scroll
+        data-scroll-section
+        data-scroll-speed="-.1"
+        className="w-full bg-[#CDEA68] py-20 rounded-tr-3xl rounded-tl-3xl font-['Neue'] text-black"
+      >
         <h1 className="text-[3.6vw] p-20 w-[95%] leading-[3.8vw]">
           We craft category-defining presentations, brand identities, and
           digital experiences that drive funding, sales, and market leadership.
@@ -57,7 +62,8 @@ function About() {
             </button>
           </div>
           <div className="w-[47vw] overflow-hidden rounded-2xl h-[34vw]">
-            <img className="w-full h-full object-cover"
+            <img
+              className="w-full h-full object-cover"
               src="https://ochi.design/wp-content/uploads/2022/05/Homepage-Photo-1326x939.jpg"
               alt=""
             />
