@@ -6,7 +6,7 @@ function About() {
       <div
         data-scroll
         data-scroll-section
-        data-scroll-speed="-.1"
+        data-scroll-speed="-0.01"
         className="w-full bg-[#CDEA68] py-20 rounded-tr-3xl rounded-tl-3xl font-['Neue'] text-black"
       >
         <h1 className="text-[3.6vw] p-20 w-[95%] leading-[3.8vw]">
@@ -50,9 +50,8 @@ function About() {
             </div>
           </div>
         </div>
-      </div>
-      <div className="w-full h-[40vw] bg-[#CDEA68] ">
-        <div className="w-full border-[0.1px] border-black"></div>
+      <div className="w-full h-[40vw] pt-15 bg-[#CDEA68] ">
+        {/* <div className="w-full border-[0.1px] border-black"></div> */}
         <div className="flex justify-between px-15 py-5">
           <div>
             <h1 className="text-6xl pb-5">How we can help:</h1>
@@ -69,6 +68,7 @@ function About() {
             />
           </div>
         </div>
+      </div>
       </div>
     </div>
   );
