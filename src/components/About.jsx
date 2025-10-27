@@ -6,7 +6,7 @@ function About() {
       <div
         data-scroll
         data-scroll-section
-        data-scroll-speed="-0.01"
+        data-scroll-speed="-0.10"
         className="w-full bg-[#CDEA68] py-20 rounded-tr-3xl rounded-tl-3xl font-['Neue'] text-black"
       >
         <h1 className="text-[3.6vw] p-20 w-[95%] leading-[3.8vw]">

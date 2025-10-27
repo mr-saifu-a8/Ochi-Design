@@ -6,6 +6,7 @@ import About from './components/About';
 import EyeAnimation from './components/animation/EyeAnimation';
 import LocomotiveScroll from "locomotive-scroll";
 import Featured from './components/Featured';
+import ClientReviews from './components/ClientReviews';
 
 
 
@@ -20,7 +21,8 @@ function App() {
       <Marque />
       <About />
       <EyeAnimation />
-      <Featured/>
+      <Featured />
+      <ClientReviews/>
     </div>
   );
 }
