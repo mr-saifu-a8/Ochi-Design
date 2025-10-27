@@ -7,6 +7,7 @@ import EyeAnimation from './components/animation/EyeAnimation';
 import LocomotiveScroll from "locomotive-scroll";
 import Featured from './components/Featured';
 import ClientReviews from './components/ClientReviews';
+import ClientReviewsName from './components/ClientReviewsName';
 
 
 
@@ -22,7 +23,8 @@ function App() {
       <About />
       <EyeAnimation />
       <Featured />
-      <ClientReviews/>
+      <ClientReviews />
+      <ClientReviewsName/>
     </div>
   );
 }
