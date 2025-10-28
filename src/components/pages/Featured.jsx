@@ -1,7 +1,15 @@
 import React from "react";
 import About from "./About";
 import { GoDotFill } from "react-icons/go";
+import { motion, useAnimate, useAnimation } from "framer-motion";
 const Featured = () => {
+  const cards = [useAnimation(), useAnimation()];
+  const handleHover = (index) => {
+    cards[index].start({ y: "0" });
+  };
+  const handleHoverEnd = (index) => {
+    cards[index].start({ y: "100%" });
+  };
   return (
     <div className="w-full bg-[#F1F1F1] font-[neue] pt-15">
       <div className="">
@@ -9,11 +17,22 @@ const Featured = () => {
         <hr />
       </div>
       <div className="flex relative justify-center items-center gap-5 pt-25 ">
-        <div className="w-[45vw] h-[35vw] overflow-hidden rounded-2xl bg-red-600">
-          <h1 className="absolute text-[#CDEA68] left-[32vw] top-[18vw] z-[9] text-9xl font-[founders]">
-            {/* {"SALIENCE LABS".slice("").map((item, index) => (
-              <span>{item}</span>
-            ))} */}
+        <motion.div
+          onHoverStart={() => handleHover(0)}
+          onHoverEnd={() => handleHoverEnd(0)}
+          className="w-[45vw] h-[35vw] overflow-hidden rounded-2xl bg-red-600"
+        >
+          <h1 className="absolute text-[#CDEA68] overflow-hidden  left-[32vw] top-[16vw] z-[9] text-[9vw] font-[founders]">
+            {"SALIENCE LABS".split("").map((item, index) => (
+              <motion.span
+                initial={{ y: "100%" }}
+                animate={cards[0]}
+                transition={{ ease: [0.25, 1, 0.5, 1], delay: index * 0.02 }}
+                className="inline-block"
+              >
+                {item}
+              </motion.span>
+            ))}
           </h1>
           <h1 className="absolute top-17 left-15 uppercase flex items-center gap-1  ">
             <GoDotFill className="text-center text-2xl" />
@@ -25,10 +44,23 @@ const Featured = () => {
             src="https://ochi.design/wp-content/uploads/2025/02/Salience_Website_cover-1326x1101.png"
             alt=""
           />
-        </div>
-        <div className="w-[45vw] h-[35vw] overflow-hidden rounded-2xl">
-          <h1 className="absolute text-[#CDEA68] left-[24vw] top-[18vw] z-[9] text-9xl font-[founders]">
-            MEDALLIA EXPERIENCE
+        </motion.div>
+        <motion.div
+          onHoverStart={() => handleHover(1)}
+          onHoverEnd={() => handleHoverEnd(1)}
+          className="w-[45vw] h-[35vw] overflow-hidden rounded-2xl"
+        >
+          <h1 className="absolute overflow-hidden text-[#CDEA68] left-[50%] whitespace-nowrap top-[55%] -translate-x-[50%] -translate-y-[50%] z-[9] text-[9vw] font-[founders]">
+            {"MEDALLIA EXPERIENCE".split("").map((item, index) => (
+              <motion.span
+                initial={{ y: "100%" }}
+                animate={cards[1]}
+                transition={{ ease: [0.25, 1, 0.5, 1], delay: index * 0.02 }}
+                className="inline-block"
+              >
+                {item}
+              </motion.span>
+            ))}
           </h1>
           <h1 className="absolute top-17  uppercase flex items-center gap-1  ">
             <GoDotFill className="text-center text-2xl" />
@@ -40,7 +72,7 @@ const Featured = () => {
             src="https://ochi.design/wp-content/uploads/2025/08/Med_Website_0.png"
             alt=""
           />
-        </div>
+        </motion.div>
       </div>
 
       {/* </div> */}
