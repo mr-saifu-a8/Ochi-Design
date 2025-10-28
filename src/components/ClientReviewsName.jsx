@@ -37,31 +37,31 @@ import React from "react";
 const ClientReviewsName = () => {
   const media = [
     { title: "Medellia", client: "Becky Chastain", action: "Read" },
-    { title: "Medellia", client: "Becky Chastain", action: "Read" },
-    { title: "Medellia", client: "Becky Chastain", action: "Read" },
-    { title: "Medellia", client: "Becky Chastain", action: "Read" },
-    { title: "Medellia", client: "Becky Chastain", action: "Read" },
-    { title: "Medellia", client: "Becky Chastain", action: "Read" },
-    { title: "Medellia", client: "Becky Chastain", action: "Read" },
-    { title: "Medellia", client: "Becky Chastain", action: "Read" },
-    { title: "Medellia", client: "Becky Chastain", action: "Read" },
+    { title: "Planetly", client: "Nina Walloch", action: "Read" },
+    { title: "Workiz Easy", client: "Tomer Levy", action: "Read" },
+    { title: "Premium Blend", client: "Ellen Kim", action: "Read" },
+    { title: "Hypercare Systems", client: "Brendan Goss", action: "Read" },
+    { title: "Officevibe", client: "Raff Labrie", action: "Read" },
+    { title: "Orderlion", client: "Stefan Strohmer", action: "Read" },
+    { title: "Black Book", client: "Jaci Smith", action: "Read" },
+    { title: "Trawa Energy", client: "David Budde", action: "Read" },
   ];
 
   return (
-    <div className="w-full font-[neue] h-screen">
+    <div className="w-full  font-[neue] ">
       {media.map((item, index) => (
         <div
           key={index}
-          className={`flex justify-between px-15 py-5 border-t border-zinc-400 text-lg 
+          className={`flex justify-between  px-15 py-5 border-t border-zinc-400 text-lg 
             ${index === media.length - 1 ? "border-b border-zinc-400" : ""}`}
         >
-          <h2>{item.title}</h2>
-          <h2>{item.client}</h2>
+          <h2 className="underline underline-offset-4">{item.title}</h2>
+          <h2 className="">{item.client}</h2>
           <h2 className="underline underline-offset-6">{item.action}</h2>
         </div>
       ))}
 
-      <div className="w-full flex gap-5 h-fit p-15">
+      <div className="w-full flex gap-5 h-fit px-15 py-30">
         <div className="w-[45vw] flex justify-center items-center rounded-xl h-[50vh] bg-[#004D43]">
           <img
             className="h-15"
@@ -69,8 +69,20 @@ const ClientReviewsName = () => {
             alt=""
           />
         </div>
-        <div className="w-[22.5vw] rounded-xl h-[50vh] bg-[#212121]"></div>
-        <div className="w-[22.5vw] rounded-xl h-[50vh] bg-[#212121]"></div>
+        <div className="w-[22.5vw] flex justify-center items-center rounded-xl h-[50vh] bg-[#212121]">
+          <img
+            className="h-20"
+            src="https://ochi.design/wp-content/uploads/2022/04/logo002.svg"
+            alt=""
+          />
+        </div>
+        <div className="w-[22.5vw] flex justify-center items-center rounded-xl h-[50vh] bg-[#212121]">
+          <img
+            className="h-27"
+            src="https://ochi.design/wp-content/uploads/2022/04/logo003.png"
+            alt=""
+          />
+        </div>
       </div>
     </div>
   );

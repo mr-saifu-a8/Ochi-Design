@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { IoArrowForwardSharp } from "react-icons/io5";
+import RightBadge from "./RightBadge";
 
 function LandingPage() {
   
@@ -55,6 +56,7 @@ function LandingPage() {
           </div>
         </div>
       </div>
+      <RightBadge/>
     </div>
   );
 }
