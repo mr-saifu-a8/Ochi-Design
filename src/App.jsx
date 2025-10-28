@@ -22,7 +22,7 @@ function App() {
       <Featured />
       <ClientReviews />
       <ClientReviewsName />
-    </div>
+    </div>  
   );
 }
 

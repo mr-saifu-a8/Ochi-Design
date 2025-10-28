@@ -1,6 +1,7 @@
 // src/components/EyeAnimation.jsx
 import React, { useEffect, useState } from "react";
-import Eyes from "../pages/Eyes";
+// import Eyes from "../pages/EyesPage";
+import EyesPage from "../pages/EyesPage";
 
 
 const EyeAnimation = () => {
@@ -26,7 +27,7 @@ const EyeAnimation = () => {
     };
   }, []);
 
-  return <Eyes rotate={rotate} />;
+  return <EyesPage rotate={rotate} />;
 };
 
 export default EyeAnimation;
