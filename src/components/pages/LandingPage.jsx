@@ -1,10 +1,9 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { IoArrowForwardSharp } from "react-icons/io5";
-import RightBadge from "./RightBadge";
+import RightBadge from "../RightBadge";
 
 function LandingPage() {
-  
   return (
     <div
       data-scroll
@@ -56,7 +55,7 @@ function LandingPage() {
           </div>
         </div>
       </div>
-      <RightBadge/>
+      <RightBadge />
     </div>
   );
 }

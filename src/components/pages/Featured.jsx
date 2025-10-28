@@ -226,6 +226,7 @@ const Featured = () => {
       </div>
     </div>
   );
-};``
+};
+``;
 
 export default Featured;

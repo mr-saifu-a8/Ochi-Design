@@ -1,6 +1,6 @@
 // src/components/EyeAnimation.jsx
 import React, { useEffect, useState } from "react";
-import Eyes from "../Eyes";
+import Eyes from "../pages/Eyes";
 
 
 const EyeAnimation = () => {

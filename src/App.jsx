@@ -1,18 +1,15 @@
-import React from 'react'
-import Navbar from './components/Navbar';
-import LandingPage from './components/LandingPage';
-import Marque from './components/Marque';
-import About from './components/About';
-import EyeAnimation from './components/animation/EyeAnimation';
+import React from "react";
+import Navbar from "./components/Navbar";
+import LandingPage from "./components/pages/LandingPage";
+import Marque from "./components/pages/Marque";
+import About from "./components/pages/About";
+import EyeAnimation from "./components/animation/EyeAnimation";
 import LocomotiveScroll from "locomotive-scroll";
-import Featured from './components/Featured';
-import ClientReviews from './components/ClientReviews';
-import ClientReviewsName from './components/ClientReviewsName';
-
-
+import Featured from "./components/pages/Featured";
+import ClientReviews from "./components/ClientReviews";
+import ClientReviewsName from "./components/ClientReviewsName";
 
 function App() {
-
   const locomotiveScroll = new LocomotiveScroll();
 
   return (
@@ -24,9 +21,9 @@ function App() {
       <EyeAnimation />
       <Featured />
       <ClientReviews />
-      <ClientReviewsName/>
+      <ClientReviewsName />
     </div>
   );
 }
 
-export default App
+export default App;
