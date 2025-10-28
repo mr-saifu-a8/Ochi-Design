@@ -11,7 +11,8 @@ const EyeAnimation = () => {
     const handleMouseMove = (e) => {
       let mouseX = e.clientX;
       let mouseY = e.clientY;
-
+      console.log("ratate", angle - 180);
+      
       let deltaX = mouseX - window.innerWidth / 2;
       let deltaY = mouseY - window.innerHeight / 2;
 
