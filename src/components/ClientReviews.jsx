@@ -6,9 +6,9 @@ import GetReady from "./pages/GetReady";
 const ClientReviews = () => {
   return (
     <div
-      data-scroll
-      data-scroll-section
-      data-scroll-speed="-1.5"
+      // data-scroll
+      // data-scroll-section
+      // data-scroll-speed="-1"
       className="w-full font-[neue]  bg-[#F1F1F1]"
     >
       <Featured />

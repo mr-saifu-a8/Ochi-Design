@@ -4,9 +4,9 @@ import Eyes from './../animation/Eyes';
 const GetReady = () => {
   return (
     <div
-      data-scroll
-      data-scroll-section
-      data-scroll-speed="1"
+      // data-scroll
+      // data-scroll-section
+      // data-scroll-speed="1"
       className="w-full flex items-center justify-center flex-col gap-10 font-[founders] h-screen bg-[#CDEA68]"
     >
       <div className="flex">

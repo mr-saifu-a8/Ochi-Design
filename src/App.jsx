@@ -1,14 +1,11 @@
-import React from "react";
 import Navbar from "./components/Navbar";
 import LandingPage from "./components/pages/LandingPage";
 import Marque from "./components/pages/Marque";
 import About from "./components/pages/About";
 import EyeAnimation from "./components/animation/EyeAnimation";
 import LocomotiveScroll from "locomotive-scroll";
-import Featured from "./components/pages/Featured";
 import ClientReviews from "./components/ClientReviews";
-import ClientReviewsName from "./components/ClientReviewsName";
-import GetReady from "./components/pages/GetReady";
+import Footer from "./components/pages/Footer";
 
 function App() {
   const locomotiveScroll = new LocomotiveScroll();
@@ -20,10 +17,8 @@ function App() {
       <Marque />
       <About />
       <EyeAnimation />
-      {/* <Featured /> */}
       <ClientReviews />
-      {/* <ClientReviewsName /> */}
-      {/* <GetReady/> */}
+      <Footer/>
     </div>  
   );
 }

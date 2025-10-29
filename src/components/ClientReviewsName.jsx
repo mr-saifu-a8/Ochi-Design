@@ -40,7 +40,7 @@ const ClientReviewsName = () => {
           />
         </div>
         {cardimg.map((index, item) => (
-          <div className="w-[22.5vw] flex justify-center items-center rounded-xl h-[50vh] bg-[#212121]">
+          <div key={item} className="w-[22.5vw] flex justify-center items-center rounded-xl h-[50vh] bg-[#212121]">
             <img className="h-20" src={index.image} alt="" />
           </div>
         ))}
