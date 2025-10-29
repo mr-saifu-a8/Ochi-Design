@@ -1,14 +1,17 @@
 import React from "react";
 import ClientReviewsName from "./ClientReviewsName";
 import Featured from "./pages/Featured";
+import GetReady from "./pages/GetReady";
 
 const ClientReviews = () => {
   return (
     <div
-    
-    className="w-full font-[neue]  bg-[#F1F1F1]"
+      data-scroll
+      data-scroll-section
+      data-scroll-speed="-1.5"
+      className="w-full font-[neue]  bg-[#F1F1F1]"
     >
-      <Featured/>
+      <Featured />
       <div>
         <h1 className="text-6xl p-10">Cliets' reviews</h1>
         <hr />
@@ -56,6 +59,7 @@ const ClientReviews = () => {
       <div className="pt-42">
         <ClientReviewsName />
       </div>
+      <GetReady />
     </div>
   );
 };

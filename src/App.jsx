@@ -23,7 +23,7 @@ function App() {
       {/* <Featured /> */}
       <ClientReviews />
       {/* <ClientReviewsName /> */}
-      <GetReady/>
+      {/* <GetReady/> */}
     </div>  
   );
 }
