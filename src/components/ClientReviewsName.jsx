@@ -1,37 +1,3 @@
-// import React from 'react'
-
-// const ClientReviewsName = () => {
-//   const media = [
-//     {title: "Medellia", client: "Becky Chastain", action: "Read"},
-//     {title: "Medellia", client: "Becky Chastain", action: "Read"},
-//     {title: "Medellia", client: "Becky Chastain", action: "Read"},
-//     {title: "Medellia", client: "Becky Chastain", action: "Read"},
-//     {title: "Medellia", client: "Becky Chastain", action: "Read"},
-//     {title: "Medellia", client: "Becky Chastain", action: "Read"},
-//     {title: "Medellia", client: "Becky Chastain", action: "Read"},
-//     {title: "Medellia", client: "Becky Chastain", action: "Read"},
-//     {title: "Medellia", client: "Becky Chastain", action: "Read"},
-    
-//   ]
-// return (
-//   <div className='w-full font-[neue] h-screen'>
-//     {media.map((item, index) => (
-      
-//       <div className='flex justify-between px-15 py-5 border-t  border-zinc-400 text-lg'>
-//         <h2>{item.title}</h2>
-//         <h2>{item.client }</h2>
-//         <h2 className='underline underline-offset-6'>{item.action}</h2>
-//       </div>
-//     ))}
-//     </div>
-//   )
-// }
-
-// export default ClientReviewsName
-
-
-
-
 import React from "react";
 
 const ClientReviewsName = () => {
@@ -47,6 +13,10 @@ const ClientReviewsName = () => {
     { title: "Trawa Energy", client: "David Budde", action: "Read" },
   ];
 
+  const cardimg = [
+    { image: "https://ochi.design/wp-content/uploads/2022/04/logo002.svg" },
+    { image: "https://ochi.design/wp-content/uploads/2022/04/logo003.png" },
+  ];
   return (
     <div className="w-full  font-[neue] ">
       {media.map((item, index) => (
@@ -69,20 +39,11 @@ const ClientReviewsName = () => {
             alt=""
           />
         </div>
-        <div className="w-[22.5vw] flex justify-center items-center rounded-xl h-[50vh] bg-[#212121]">
-          <img
-            className="h-20"
-            src="https://ochi.design/wp-content/uploads/2022/04/logo002.svg"
-            alt=""
-          />
-        </div>
-        <div className="w-[22.5vw] flex justify-center items-center rounded-xl h-[50vh] bg-[#212121]">
-          <img
-            className="h-27"
-            src="https://ochi.design/wp-content/uploads/2022/04/logo003.png"
-            alt=""
-          />
-        </div>
+        {cardimg.map((index, item) => (
+          <div className="w-[22.5vw] flex justify-center items-center rounded-xl h-[50vh] bg-[#212121]">
+            <img className="h-20" src={index.image} alt="" />
+          </div>
+        ))}
       </div>
     </div>
   );

@@ -1,8 +1,14 @@
 import React from "react";
+import ClientReviewsName from "./ClientReviewsName";
+import Featured from "./pages/Featured";
 
 const ClientReviews = () => {
   return (
-    <div className="w-full font-[neue] h-[40vw] bg-[#F1F1F1]">
+    <div
+    
+    className="w-full font-[neue]  bg-[#F1F1F1]"
+    >
+      <Featured/>
       <div>
         <h1 className="text-6xl p-10">Cliets' reviews</h1>
         <hr />
@@ -46,6 +52,9 @@ const ClientReviews = () => {
           </div>
         </div>
         <div className="w-full h-52"></div>
+      </div>
+      <div className="pt-42">
+        <ClientReviewsName />
       </div>
     </div>
   );

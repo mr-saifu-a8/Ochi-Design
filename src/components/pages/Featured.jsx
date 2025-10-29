@@ -20,7 +20,7 @@ const Featured = () => {
         <motion.div
           onHoverStart={() => handleHover(0)}
           onHoverEnd={() => handleHoverEnd(0)}
-          className="w-[45vw] h-[35vw] overflow-hidden rounded-2xl bg-red-600"
+          className="w-[45vw] h-[35vw] overflow-hidden rounded-2xl"
         >
           <h1 className="absolute text-[#CDEA68] overflow-hidden  left-[32vw] top-[16vw] z-[9] text-[9vw] font-[founders]">
             {"SALIENCE LABS".split("").map((item, index) => (
@@ -39,8 +39,10 @@ const Featured = () => {
             salience labs
           </h1>
 
-          <img
-            className="w-full h-full object-cover"
+          <motion.img
+            whileHover={{ scale: 0.96 }} // hover par scale chhota
+            transition={{ ease: "linear", stiffness: 300 }}
+            className="w-full rounded-2xl h-full object-cover"
             src="https://ochi.design/wp-content/uploads/2025/02/Salience_Website_cover-1326x1101.png"
             alt=""
           />
@@ -67,15 +69,16 @@ const Featured = () => {
             salience labs
           </h1>
 
-          <img
-            className="w-full object-cover h-full"
+          <motion.img
+            whileHover={{ scale: 0.96 }} // hover par scale chhota
+            transition={{ ease: "linear", stiffness: 300 }}
+            className="w-full rounded-2xl h-full object-cover"
             src="https://ochi.design/wp-content/uploads/2025/08/Med_Website_0.png"
             alt=""
           />
         </motion.div>
       </div>
 
-      {/* </div> */}
     </div>
   );
 };

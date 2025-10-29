@@ -8,6 +8,7 @@ import LocomotiveScroll from "locomotive-scroll";
 import Featured from "./components/pages/Featured";
 import ClientReviews from "./components/ClientReviews";
 import ClientReviewsName from "./components/ClientReviewsName";
+import GetReady from "./components/pages/GetReady";
 
 function App() {
   const locomotiveScroll = new LocomotiveScroll();
@@ -19,9 +20,10 @@ function App() {
       <Marque />
       <About />
       <EyeAnimation />
-      <Featured />
+      {/* <Featured /> */}
       <ClientReviews />
-      <ClientReviewsName />
+      {/* <ClientReviewsName /> */}
+      <GetReady/>
     </div>  
   );
 }
