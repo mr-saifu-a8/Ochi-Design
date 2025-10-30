@@ -4,12 +4,16 @@ import Eyes from './../animation/Eyes';
 const GetReady = () => {
   return (
     <div
-      // data-scroll
-      // data-scroll-section
-      // data-scroll-speed="1"
+        data-scroll
+        data-scroll-section
+        data-scroll-speed="-0.5"
       className="w-full flex items-center justify-center flex-col gap-10 font-[founders] h-screen bg-[#CDEA68]"
     >
-      <div className="flex">
+      <div className="flex relative">
+        <div className="absolute top-40 left-[32vw] h-40">
+
+        <Eyes />
+        </div>
         <h1 className="text-[15vw] text-[#212121] uppercase text-center leading-[11vw]">
           ready <br /> to start <br /> the project
           <span className="font-[arial] font-bold">?</span>
