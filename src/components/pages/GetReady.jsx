@@ -1,6 +1,6 @@
 import React from "react";
 import { GoDotFill } from "react-icons/go";
-import Eyes from './../animation/Eyes';
+import EyeAnimation from "../animation/EyeAnimation";
 const GetReady = () => {
   return (
     <div
@@ -12,7 +12,7 @@ const GetReady = () => {
       <div className="flex relative">
         <div className="absolute top-40 left-[32vw] h-40">
 
-        <Eyes />
+        <EyeAnimation/>
         </div>
         <h1 className="text-[15vw] text-[#212121] uppercase text-center leading-[11vw]">
           ready <br /> to start <br /> the project

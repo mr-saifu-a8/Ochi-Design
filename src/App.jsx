@@ -7,6 +7,8 @@ import LocomotiveScroll from "locomotive-scroll";
 import ClientReviews from "./components/ClientReviews";
 import Footer from "./components/pages/Footer";
 
+import EyesPage from './components/pages/EyesPage';
+
 function App() {
   const locomotiveScroll = new LocomotiveScroll();
 
@@ -16,7 +18,8 @@ function App() {
       <LandingPage />
       <Marque />
       <About />
-      <EyeAnimation />
+      {/* <EyeAnimation/> */}
+    <EyesPage/>
       <ClientReviews />
       <Footer/>
     </div>  
